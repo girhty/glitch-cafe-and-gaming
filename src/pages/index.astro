@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import InstagramFeed from '../components/InstagramFeed.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Contact from '../components/Contact.astro';
+
+const pageTitle = "Glitch cafe and gaming / كلتش كافية | أفضل صالة قيمنق وكافيه في بغداد";
+const pageDescription = "ارفع مستوى ونستك في Glitch Cafe & Gaming: PS5, PC Gaming, بليارد, غرفة VIP, وألعاب بورد مع أطيب القهوة في مجمع الصالحية، بغداد. احجز مكانك الآن!";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <Hero />
+  <Features />
+  <InstagramFeed />
+  <Testimonials />
+  <Contact />
+</Layout>

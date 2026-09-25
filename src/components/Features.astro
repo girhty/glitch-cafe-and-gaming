@@ -1,0 +1,27 @@
+---
+const features = [
+  { title: "PlayStation 5", desc: "أحدث أجهزة PS5 مع شاشات ضخمة وتحديات بأعلى جودة.", icon: "🎮" },
+  { title: "PC Gaming", desc: "أقوى مواصفات الكمبيوتر لتجربة قيمنق بدون أي لاك.", icon: "💻" },
+  { title: "بليارد احترافي", desc: "طاولات بليارد بمواصفات عالية جاهزة للمنافسات.", icon: "🎱" },
+  { title: "Board Games & دومنة", desc: "كل ألعاب البورد كيم، الطاولي، الدومنة، والورق.", icon: "🎲" },
+  { title: "غرفة VIP", desc: "راحة الخصوصية التامة لقعدة تونس ولمة الربع.", icon: "✨" },
+  { title: "قهوة مختصة", desc: "باريستا جبار يضبطلك أطيب المشروبات الباردة والساخنة والحلويات.", icon: "☕" },
+];
+---
+<section id="features" class="py-20 bg-glitch-dark" aria-label="Facilities">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">كل التفاصيل اللي تغير جوّك <span class="text-glitch-neon">بمكان واحد</span></h2>
+      <p class="text-gray-400 max-w-2xl mx-auto">ليش تختار مكان ثاني؟ Glitch Cafe يوفر لك كل وسائل الترفيه تحت سقف واحد.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {features.map(feature => (
+        <div class="bg-glitch-darker border border-white/5 rounded-2xl p-8 hover:border-glitch-purple/50 transition duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] group">
+          <div class="text-5xl mb-6 group-hover:scale-110 transition transform origin-right">{feature.icon}</div>
+          <h3 class="text-2xl font-bold mb-3 text-white">{feature.title}</h3>
+          <p class="text-gray-400 leading-relaxed">{feature.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

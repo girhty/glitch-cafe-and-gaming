@@ -1,0 +1,55 @@
+---
+const reviews = [
+  {
+    name: "علي من بغداد",
+    text: "أفضل مكان للقيمنق! جربت الـ PS5 والشاشات العملاقة، والأجواء رهيبة. القهوة بعد ممتازة.",
+    role: "لاعب وزبون دائم"
+  },
+  {
+    name: "محمد",
+    text: "غرفة الـ VIP تعطي خصوصية ممتازة للمة الربع. البليارد والدومنة تخلينا نستانس لساعات.",
+    role: "طالب جامعي"
+  },
+  {
+    name: "حسين",
+    text: "شاشات ضخمة للمباريات، توقعنا نتيجة خليجي 27 وفزنا بخصم! أكيد راح نرجع.",
+    role: "مشجع رياضي"
+  }
+];
+---
+<section id="vibes" class="py-20 bg-glitch-dark relative overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.1)_0,transparent_70%)]"></div>
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">آراء الزباين و<span class="text-glitch-neon">أجواء المجتمع</span></h2>
+      <p class="text-gray-400 max-w-2xl mx-auto">ثقة الناس إلنا هي وسام على الصدر. شوف شنو كاعدين يقولون عن Glitch.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {reviews.map(rev => (
+        <div class="bg-black/50 p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:-translate-y-2 transition transform duration-300">
+          <div class="flex text-yellow-400 mb-4">⭐⭐⭐⭐⭐</div>
+          <p class="text-gray-300 italic mb-6">"{rev.text}"</p>
+          <div class="flex items-center gap-4">
+            <div class="h-12 w-12 rounded-full bg-gradient-to-br from-glitch-purple to-glitch-neon flex items-center justify-center font-bold text-xl">
+              {rev.name.charAt(0)}
+            </div>
+            <div>
+              <h4 class="font-bold text-white">{rev.name}</h4>
+              <span class="text-xs text-gray-500">{rev.role}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <div class="mt-16 text-center">
+      <div class="inline-block bg-white/5 border border-white/10 rounded-xl p-6">
+        <p class="text-lg font-bold text-white mb-2">⭐ تقييم Google Places</p>
+        <div class="flex justify-center items-center gap-2 text-3xl font-black text-yellow-400">
+          5.0 <span class="text-sm font-normal text-gray-400">/ 5</span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">بناءً على 2 تقييم موثوق</p>
+      </div>
+    </div>
+  </div>
+</section>

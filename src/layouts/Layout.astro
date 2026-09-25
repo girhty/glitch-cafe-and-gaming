@@ -1,0 +1,41 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body class="bg-glitch-darker text-gray-50 font-sans antialiased selection:bg-glitch-purple selection:text-white flex flex-col min-h-screen">
+  <header class="fixed w-full top-0 z-50 bg-glitch-darker/80 backdrop-blur-md border-b border-white/10">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center" aria-label="Main Navigation">
+      <div class="text-2xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-glitch-purple to-glitch-neon">
+        GLITCH <span class="text-sm font-normal text-white">CAFÉ & GAMING</span>
+      </div>
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="#features" class="hover:text-glitch-neon transition">المرافق</a></li>
+        <li><a href="#instagram" class="hover:text-glitch-neon transition">إنستغرام</a></li>
+        <li><a href="#vibes" class="hover:text-glitch-neon transition">الآراء</a></li>
+        <li><a href="#contact" class="hover:text-glitch-neon transition">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex-grow pt-20">
+    <slot />
+  </main>
+  <footer class="bg-black py-8 text-center text-gray-400 text-sm border-t border-white/10">
+    <p>&copy; 2024 Glitch Cafe & Gaming. جميع الحقوق محفوظة.</p>
+    <p class="mt-2">شارع الصالحية, Baghdad, Baghdad Governorate</p>
+  </footer>
+</body>
+</html>

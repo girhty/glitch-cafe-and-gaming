@@ -1,0 +1,67 @@
+---
+const handle = "glitch.cafe";
+const followers = 353;
+const posts = [
+  {
+    caption: "🔥 الأجواء حارّة والقمة تنتظرنا بـ Glitch! 🇮🇶🇴🇲 جاهزين لقمة خليجي 27 بين منتخبنا العراقي والأشقاء بعُمان؟ 🏆⚽ تعالوا عيشوا الحماس والتشجيع ويا ولدنا بأقوى أجواء وشاشات عملاقة! 🎮🔥",
+    image: "https://scontent.cdninstagram.com/v/t51.82787-15/818453795_18120348979954989_4932660412944172426_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5q8BiYQmaY0Q7kNvwHnJ3fw&_nc_oc=AdpGFDDQw8CfTq2RFsU4B2-HazTi3w3fPnHTe4KVgoT0wrR9FxB8mhOeHj2P6tEGuF0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=9Wz3I7a945KgPdv81i1x3g&_nc_ss=7ca8c&oh=00_AQLxMaaKz17eHuuShmHEp7lD2R9615M4j8z0BnSYJQB3Hg&oe=6ABC5CA8",
+    likes: 120
+  },
+  {
+    caption: "ليش اختاريتي هذا المكان !!!!!!!! 📍 العنوان: سنتر الصالحية - الطابق الأول - مقابل البرج",
+    image: "https://scontent.cdninstagram.com/v/t51.82787-15/809519052_18119696179954989_7660196171868989839_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=i2w9ktpWoM8Q7kNvwFEW2jj&_nc_oc=AdoVVzG2Ensn_A6Lq9BpGl6jkIQ2hKmx0bPucKMiq3Jmvghuoem9SMhgJzV9Z6yEQ5s&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=9Wz3I7a945KgPdv81i1x3g&_nc_ss=7ca8c&oh=00_AQKgDBFMiqGXRj6Eoe6t3xy83VI3OjA3INoiltAJh8XNNA&oe=6ABC4FA8",
+    likes: 85
+  },
+  {
+    caption: "أهل مجمع الصالحية 🔥 جمعة الربع صارت أحلى بـ GLITCH 🎮 گيمنگ، بلايستيشن، بليارد، دومنة وبورد گيم، وصالة VIP ✨",
+    image: "https://scontent.cdninstagram.com/v/t51.82787-15/800715038_18118297444954989_8228704918414901581_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Jn7s1XtbZjQQ7kNvwHd5XN7&_nc_oc=Adp5lmVxvTXdAYzIySqS3VpfWDXVLuRtCYmCOjcl8jSBPsebVM1vIKl9Lo0dFqAYqaU&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=9Wz3I7a945KgPdv81i1x3g&_nc_ss=7ca8c&oh=00_AQIjiinz5OTsyjYSmG-i2_bxh6sORIdz1Z8Mb9O1YsUGUg&oe=6ABC62EE",
+    likes: 200
+  },
+  {
+    caption: "لم الونسة والتحدي صار بقلب مجمع الصالحية! 🔥🎮 إذا تدور على كعدة ترتب المود وتجمع سوالفكم الحلوة ويا التحدي، بـ Glitch Café جمعنالك كلشي بداخل مكان واحد",
+    image: "https://scontent.cdninstagram.com/v/t51.82787-15/798035317_18117919237954989_7407371624950065619_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=GVtmDODgwEYQ7kNvwHJGm7f&_nc_oc=Adpr7j0F47QuvJs1RhSBjM51JGZY2mDZkSVKkWfIG2oEVq1g8_WvDii_DWAz_ar8Wwo&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=9Wz3I7a945KgPdv81i1x3g&_nc_ss=7ca8c&oh=00_AQLxeAsir32TC8_gAIwpQhgYp75XA9TJ72KI3TJb1TjBSQ&oe=6ABC38FE",
+    likes: 150
+  },
+  {
+    caption: "السعادة مو شي معقد.. مرات هي مجرد قعدة تونس ولمة ربع بـ Glitch! ✨ من أجهزة الـ PC والـ PS5، لطاولات البليارد والدومنة، لراحة الخصوصية بغرفة الـ VIP..",
+    image: "https://scontent.cdninstagram.com/v/t51.82787-15/789633456_18116853802954989_2437739831406541419_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=kB171Dwpd7QQ7kNvwFQhaxv&_nc_oc=Adrrxa04bUoFi4FNbGwNkcy0S99PfU6uitYaXRJQExaFod_IUW5zbw553uswyNdzfRk&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=9Wz3I7a945KgPdv81i1x3g&_nc_ss=7ca8c&oh=00_AQKnOpAX50LNsG8kP5O1RxR-yrZQOgqeCz6bx7zIqmvsOg&oe=6ABC5D17",
+    likes: 300
+  }
+];
+---
+<section id="instagram" class="py-20 bg-glitch-darker" aria-label="Instagram Feed">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">تابعونا على إنستغرام</h2>
+        <p class="text-gray-400">آخر الفعاليات، البطولات، والأجواء الحلوة.</p>
+      </div>
+      <div class="flex items-center gap-4 bg-gradient-to-r from-purple-900/40 to-pink-900/40 border border-pink-500/30 px-6 py-3 rounded-full backdrop-blur-sm">
+        <div>
+          <p class="font-bold text-pink-400">@{handle}</p>
+          <p class="text-xs text-gray-300">{followers} متابع</p>
+        </div>
+        <a href={`https://instagram.com/${handle}`} target="_blank" rel="noopener" class="bg-pink-600 hover:bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold transition">
+          تابعنا
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+      {posts.map(post => (
+        <article class="group relative bg-black rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/50 transition shadow-lg">
+          <div class="aspect-square overflow-hidden">
+            <img src={post.image} alt="Instagram Post" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy"/>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
+            <p class="text-xs text-gray-200 line-clamp-4 mb-2">{post.caption}</p>
+            <div class="flex items-center gap-2 text-pink-500 text-sm font-bold">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>{post.likes}</span>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
